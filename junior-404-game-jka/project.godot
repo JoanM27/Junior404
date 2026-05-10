@@ -14,6 +14,13 @@ config/name="Junior404-Game JKA"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AudioManager="*uid://bofauxcg6p1"
+GameManager="*uid://ctb48nnbwsdmr"
+SceneTransition="*uid://p4y0i14xs2g1"
+PlayerData="*uid://dvpri8t7awjc4"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
