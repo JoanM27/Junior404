@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://c6gr6vcuyy4k5"]
 
 [ext_resource type="PackedScene" uid="uid://d1e3sxnp32m1" path="res://scenes/world/Player.tscn" id="1_qhaok"]
+[ext_resource type="PackedScene" uid="uid://ckl3osg1toj5a" path="res://scenes/world/Supervisor_placed.tscn" id="2_vd6tx"]
 
 [node name="Oficina" type="Node2D" unique_id=1348172529]
+y_sort_enabled = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1580745013]
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=606609887]
 
 [node name="Player" parent="." unique_id=1910497097 instance=ExtResource("1_qhaok")]
+position = Vector2(20, 61)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1370914078]
+
+[node name="SupervisorPlaced" parent="." unique_id=495479311 instance=ExtResource("2_vd6tx")]
+position = Vector2(71, -4)

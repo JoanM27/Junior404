@@ -1,3 +1,25 @@
 [gd_scene format=3 uid="uid://cyt36ryt0wbum"]
 
+[ext_resource type="Script" uid="uid://bl434bokwnic6" path="res://scenes/world/supervisor_dialog.gd" id="1_5el4v"]
+
 [node name="SupervisorDialog" type="CanvasLayer" unique_id=509471596]
+script = ExtResource("1_5el4v")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1997755760]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="." unique_id=1420325010]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel" unique_id=829682580]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel" unique_id=1745598019]
+
+[node name="Button" type="Button" parent="." unique_id=1644319110]
+offset_right = 8.0
+offset_bottom = 8.0

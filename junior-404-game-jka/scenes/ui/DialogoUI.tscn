@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cuv54c35l1m7l"]
+
+[ext_resource type="Script" uid="uid://b0f7n7mfdvwbi" path="res://scenes/ui/dialogo_ui.gd" id="1_22rv6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7p1jr"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Isabella_idle",
+"speed": 5.0
+}]
+
+[node name="DialogoUi" type="CanvasLayer" unique_id=2089661330]
+script = ExtResource("1_22rv6")
+
+[node name="Control" type="Control" parent="." unique_id=728387120]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RetratoSupervisor" type="AnimatedSprite2D" parent="Control" unique_id=1243898997]
+sprite_frames = SubResource("SpriteFrames_7p1jr")
+animation = &"Isabella_idle"
+
+[node name="CajaTexto" type="PanelContainer" parent="Control" unique_id=1709406859]
+layout_mode = 1
+offset_right = 60.0
+offset_bottom = 27.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/CajaTexto" unique_id=2103472801]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/CajaTexto/VBoxContainer" unique_id=93091157]
+layout_mode = 2
+text = "Isabella"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/CajaTexto/VBoxContainer" unique_id=1057118219]
+layout_mode = 2
+text = "Linea de Dialogo"
+
+[node name="IndicadorContinuar" type="TextureRect" parent="Control" unique_id=1371274421]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 63.0
+offset_right = 62.0
+offset_bottom = 103.0

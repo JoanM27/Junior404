@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Junior404-Game JKA"
+run/main_scene="uid://br4pe83hdrm6d"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -20,6 +21,13 @@ AudioManager="*uid://bofauxcg6p1"
 GameManager="*uid://ctb48nnbwsdmr"
 SceneTransition="*uid://p4y0i14xs2g1"
 PlayerData="*uid://dvpri8t7awjc4"
+SupervisorManager="*uid://bw4ivyihmxu15"
+DialogDatabase="*uid://danrcytb2ne31"
+
+[display]
+
+window/size/mode=2
+window/stretch/scale=5.0
 
 [input]
 

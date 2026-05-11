@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://sc1uo1ctuhtw"]
 
+[ext_resource type="Script" uid="uid://d2d2f55ewcjbw" path="res://scenes/world/supervisor_minigame.gd" id="1_q4trn"]
+
 [node name="SupervisorMinigame" type="Node2D" unique_id=759167050]
+script = ExtResource("1_q4trn")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="." unique_id=1374392034]
+
+[node name="Bone2D" type="Bone2D" parent="Skeleton2D" unique_id=2107817964]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=248654372]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1533231866]

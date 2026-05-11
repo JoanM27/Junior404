@@ -54,6 +54,7 @@ func guardar_progreso() -> void:
 		"item_equipado": item_equipado.resource_path if item_equipado else "",
 		"inventario": inventario_items.map(func(i): return i.resource_path)
 	}
+	var reputacion: Dictionary = {}
 	var archivo = FileAccess.open("user://save.json", FileAccess.WRITE)
 	archivo.store_string(JSON.stringify(data))
 
