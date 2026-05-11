@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c6gr6vcuyy4k5"]
+
+[ext_resource type="PackedScene" uid="uid://d1e3sxnp32m1" path="res://scenes/world/Player.tscn" id="1_qhaok"]
+
+[node name="Oficina" type="Node2D" unique_id=1348172529]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1580745013]
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=606609887]
+
+[node name="Player" parent="." unique_id=1910497097 instance=ExtResource("1_qhaok")]
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1370914078]
