@@ -1,0 +1,43 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bff4e0ksqpn0f"]
+
+[ext_resource type="Texture2D" uid="uid://div3tixhwsxu2" path="res://assets/sprites/Isabella_01.png" id="1_l6c2c"]
+[ext_resource type="Texture2D" uid="uid://btexobju5xm1f" path="res://assets/sprites/Isabella_02.png" id="2_h6eko"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8akqc"]
+atlas = ExtResource("1_l6c2c")
+region = Rect2(0, 0, 180, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6c2c"]
+atlas = ExtResource("2_h6eko")
+region = Rect2(0, 0, 180, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynqbp"]
+atlas = ExtResource("2_h6eko")
+region = Rect2(0, 0, 180, 180)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8akqc")
+}],
+"loop": true,
+"name": &"bienvenida",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6c2c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynqbp")
+}],
+"loop": true,
+"name": &"tarea",
+"speed": 5.0
+}]

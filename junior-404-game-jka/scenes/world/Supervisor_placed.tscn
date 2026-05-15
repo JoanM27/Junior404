@@ -2,22 +2,21 @@
 
 [ext_resource type="Script" uid="uid://b0t7e2m8vdp5r" path="res://scenes/world/supervisor_placed.gd" id="1_6xdms"]
 [ext_resource type="SpriteFrames" uid="uid://b8xve8ybetof" path="res://resources/Isabela_placed.tres" id="1_37f6f"]
-[ext_resource type="Resource" uid="uid://0iuyiyauroys" path="res://scripts/resources/Isabella.tres" id="2_g3tiy"]
+[ext_resource type="Script" uid="uid://d1fuy1bgqbcb2" path="res://scripts/player/Supervisor.gd" id="1_g3tiy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_37f6f"]
 size = Vector2(14, 4)
 
 [node name="SupervisorPlaced" type="StaticBody2D" unique_id=495479311]
 position = Vector2(0, -15)
-collision_layer = 4
+collision_layer = 6
 collision_mask = 4
-script = ExtResource("1_6xdms")
-datos = ExtResource("2_g3tiy")
+script = ExtResource("1_g3tiy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2007245808]
 sprite_frames = ExtResource("1_37f6f")
-animation = &"Isabella_idle_up"
-frame_progress = 0.7577263
+animation = &"idle_down"
+script = ExtResource("1_6xdms")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1068418073]
 position = Vector2(0, 15)

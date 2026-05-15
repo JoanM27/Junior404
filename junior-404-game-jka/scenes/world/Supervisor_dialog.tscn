@@ -1,25 +1,63 @@
 [gd_scene format=3 uid="uid://cyt36ryt0wbum"]
 
 [ext_resource type="Script" uid="uid://bl434bokwnic6" path="res://scenes/world/supervisor_dialog.gd" id="1_5el4v"]
+[ext_resource type="FontFile" uid="uid://baxh5gcvqeokf" path="res://assets/fonts/BoldPixels.ttf" id="3_2c4de"]
+[ext_resource type="Script" uid="uid://ckbpyyileiybf" path="res://scenes/world/supervisor_dialog_view.gd" id="4_06dij"]
+[ext_resource type="SpriteFrames" uid="uid://bff4e0ksqpn0f" path="res://resources/Isabela_Dialog.tres" id="4_w5pyv"]
+
+[sub_resource type="Theme" id="Theme_5v4ou"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p0i73"]
+font = ExtResource("3_2c4de")
 
 [node name="SupervisorDialog" type="CanvasLayer" unique_id=509471596]
 script = ExtResource("1_5el4v")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1997755760]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Control" type="Control" parent="." unique_id=1381692692]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="." unique_id=1420325010]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Panel" type="Panel" parent="Control" unique_id=1420325010]
+custom_minimum_size = Vector2(139.79, 76.475)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -74.63
+offset_right = 139.79
+offset_bottom = 10.0
+grow_vertical = 0
+scale = Vector2(3.0731623, 3.316011)
+theme = SubResource("Theme_5v4ou")
 
-[node name="Label" type="Label" parent="Panel" unique_id=829682580]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Panel" unique_id=1871602460]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 3.5793748
+offset_top = 2.3009565
+offset_right = 75.57938
+offset_bottom = 42.300957
+scale = Vector2(0.26382136, 0.26382136)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel" unique_id=1745598019]
+[node name="Label" type="Label" parent="Control/Panel/VBoxContainer" unique_id=829682580]
+layout_mode = 2
+text = "Supervisor"
+label_settings = SubResource("LabelSettings_p0i73")
 
-[node name="Button" type="Button" parent="." unique_id=1644319110]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/Panel/VBoxContainer/Label" unique_id=743575269]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 23.0
+offset_right = 302.18344
+offset_bottom = 70.87053
+theme_override_fonts/normal_font = ExtResource("3_2c4de")
+text = "Aqui Dialogo"
+
+[node name="Supervisor" type="AnimatedSprite2D" parent="Control" unique_id=666588586]
+position = Vector2(289, 106)
+sprite_frames = ExtResource("4_w5pyv")
+animation = &"idle"
+script = ExtResource("4_06dij")

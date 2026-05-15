@@ -1,19 +1,45 @@
-[gd_scene format=3 uid="uid://c6gr6vcuyy4k5"]
+[gd_scene format=4 uid="uid://c6gr6vcuyy4k5"]
 
+[ext_resource type="TileSet" uid="uid://bjaxil02u3cul" path="res://resources/Scenaries.tres" id="1_232go"]
 [ext_resource type="PackedScene" uid="uid://d1e3sxnp32m1" path="res://scenes/world/Player.tscn" id="1_qhaok"]
+[ext_resource type="Resource" uid="uid://0iuyiyauroys" path="res://scripts/resources/Isabella.tres" id="2_v47v5"]
 [ext_resource type="PackedScene" uid="uid://ckl3osg1toj5a" path="res://scenes/world/Supervisor_placed.tscn" id="2_vd6tx"]
+[ext_resource type="PackedScene" uid="uid://cyt36ryt0wbum" path="res://scenes/world/Supervisor_dialog.tscn" id="3_it4ir"]
+[ext_resource type="TileSet" uid="uid://4kf0q0kfc5ko" path="res://resources/RoomMaker.tres" id="3_ly4cv"]
 
 [node name="Oficina" type="Node2D" unique_id=1348172529]
 y_sort_enabled = true
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1580745013]
+[node name="SupervisorPlaced" parent="." unique_id=495479311 instance=ExtResource("2_vd6tx")]
+position = Vector2(71, -4)
+datos = ExtResource("2_v47v5")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=606609887]
+[node name="SupervisorDialog" parent="SupervisorPlaced" unique_id=509471596 instance=ExtResource("3_it4ir")]
+visible = false
 
 [node name="Player" parent="." unique_id=1910497097 instance=ExtResource("1_qhaok")]
 position = Vector2(20, 61)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1370914078]
 
-[node name="SupervisorPlaced" parent="." unique_id=495479311 instance=ExtResource("2_vd6tx")]
-position = Vector2(71, -4)
+[node name="CapaFondo" type="TileMapLayer" parent="." unique_id=1627140130]
+z_index = -20
+scale = Vector2(0.6, 0.6)
+tile_map_data = PackedByteArray("AAABAAMAAQAMAAwAAAAAAAMAAQAMAAwAAAD//wMAAQAMAAwAAAD//wIAAQAMAAwAAAAAAAIAAQAMAAwAAAABAAIAAQAMAAwAAAACAAIAAQAMAAwAAAACAAMAAQAMAAwAAAADAAMAAQAMAAwAAAD+/wMAAQAMAAwAAAD+/wIAAQAMAAwAAAD//wEAAQAMAAwAAAD+/wEAAQAMAAwAAAABAAEAAQAMAAwAAAAAAAEAAQAMAAwAAAD//wAAAQAMAAwAAAD+/wAAAQAMAAwAAAAAAAAAAQAMAAwAAAABAAAAAQAMAAwAAAACAAAAAQAMAAwAAAACAAEAAQAMAAwAAAADAAIAAQAMAAwAAAADAAEAAQAMAAwAAAADAAAAAQAMAAwAAAAEAAAAAQAMAAwAAAAEAAEAAQAMAAwAAAAEAAIAAQAMAAwAAAAEAAMAAQAMAAwAAAAEAAQAAQAMAAwAAAADAAQAAQAMAAwAAAACAAQAAQAMAAwAAAABAAQAAQAMAAwAAAAAAAQAAQAMAAwAAAD//wQAAQAMAAwAAAD+/wQAAQAMAAwAAAD9/wQAAQAMAAwAAAD9/wMAAQAMAAwAAAD9/wIAAQAMAAwAAAD9/wEAAQAMAAwAAAD9/wAAAQAMAAwAAAD9////AQAMAAwAAAD+////AQAMAAwAAAD/////AQAMAAwAAAAAAP//AQAMAAwAAAABAP//AQAMAAwAAAACAP//AQAMAAwAAAADAP//AQAMAAwAAAAEAP//AQAMAAwAAAAFAP//AQAMAAwAAAAGAAAAAQAMAAwAAAAGAAEAAQAMAAwAAAAFAAEAAQAMAAwAAAAFAAIAAQAMAAwAAAAFAAAAAQAMAAwAAAAGAP//AQAMAAwAAAAGAAIAAQAMAAwAAAAGAAMAAQAMAAwAAAAGAAQAAQAMAAwAAAAFAAQAAQAMAAwAAAAFAAMAAQAMAAwAAAAGAP7/AQAMAAwAAAAFAP7/AQAMAAwAAAAEAP7/AQAMAAwAAAADAP7/AQAMAAwAAAD+//7/AQAMAAwAAAD9//7/AQAMAAwAAAD///7/AQAMAAwAAAAAAP7/AQAMAAwAAAABAP7/AQAMAAwAAAACAP7/AQAMAAwAAAA=")
+tile_set = ExtResource("3_ly4cv")
+
+[node name="CapaSobrePared" type="TileMapLayer" parent="." unique_id=1118842457]
+position = Vector2(0, 8)
+scale = Vector2(0.6, 0.6)
+tile_map_data = PackedByteArray("AAD9//n/AgAEACkAAAABAPn/AgAEACkAAAAIAPn/AgAQABwAAAANAPn/AgAQABwAAAA=")
+tile_set = ExtResource("1_232go")
+
+[node name="CapaMuebles" type="TileMapLayer" parent="." unique_id=1580745013]
+scale = Vector2(0.6, 0.6)
+tile_map_data = PackedByteArray("AAABAAMAAQACAAkAAAA=")
+tile_set = ExtResource("1_232go")
+
+[node name="CapaObjetos" type="TileMapLayer" parent="." unique_id=606609887]
+scale = Vector2(0.6, 0.6)
+tile_map_data = PackedByteArray("AAADAAMAAQAMAA8AAAABAAMAAgAXACwAAAABAAEAAQAaAEAAAAA=")
+tile_set = ExtResource("1_232go")

@@ -29,4 +29,4 @@ func get_linea(supervisor: String, situacion: String) -> String:
 func get_lineas(supervisor: String, situacion: String) -> Array:
 	if DIALOGOS.has(supervisor) and DIALOGOS[supervisor].has(situacion):
 		return DIALOGOS[supervisor][situacion]
-	return ["..."]
+	return ["..."] 

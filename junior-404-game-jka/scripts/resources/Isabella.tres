@@ -2,9 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dw1514xdmf6iu" path="res://scripts/resources/SupervisorData.gd" id="1_xaw3v"]
 [ext_resource type="SpriteFrames" uid="uid://b8xve8ybetof" path="res://resources/Isabela_placed.tres" id="2_a5y07"]
+[ext_resource type="SpriteFrames" uid="uid://bff4e0ksqpn0f" path="res://resources/Isabela_Dialog.tres" id="2_vmvbl"]
 
 [resource]
 script = ExtResource("1_xaw3v")
 nombre = "Isabella"
 sprite_frames_mundo = ExtResource("2_a5y07")
+sprite_frames_dialogo = ExtResource("2_vmvbl")
 metadata/_custom_type_script = "uid://dw1514xdmf6iu"

@@ -7,8 +7,8 @@ func _ready() -> void:
 func _on_supervisor_cambiado(data: SupervisorData) -> void:
 	if data == null:
 		return
-	sprite_frames = data.sprite_frames_mundo
-	play("idle_down")
+	sprite_frames = data.sprite_frames_dialogo
+	play("idle")
 
 func _on_reaccion(nombre_anim: String) -> void:
 	if sprite_frames and sprite_frames.has_animation(nombre_anim):
