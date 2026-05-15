@@ -11,6 +11,7 @@
 y_sort_enabled = true
 
 [node name="SupervisorPlaced" parent="." unique_id=495479311 instance=ExtResource("2_vd6tx")]
+z_index = 1
 position = Vector2(-312, -288)
 datos = ExtResource("2_v47v5")
 
@@ -18,6 +19,7 @@ datos = ExtResource("2_v47v5")
 visible = false
 
 [node name="Player" parent="." unique_id=1910497097 instance=ExtResource("1_qhaok")]
+z_index = 1
 position = Vector2(20, 61)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1370914078]
@@ -36,11 +38,14 @@ tile_map_data = PackedByteArray("AAAIAPn/AgAWABwAAAANAPn/AgAWABwAAADY//H/AQASAB0
 tile_set = ExtResource("1_232go")
 
 [node name="CapaMuebles" type="TileMapLayer" parent="." unique_id=1580745013]
+y_sort_enabled = true
 scale = Vector2(0.6, 0.6)
 tile_map_data = PackedByteArray("AADy//r/AgAaABEAAFDY/+T/AgAaAAgAAGDU//P/AgAQACEAAADe/+j/AQAMAAkAAADk//r/AQAUADkAAADU//r/AQAUADkAAADk/wAAAQAUADkAAADc/wAAAQAUADkAAADU/wAAAQAUADkAAADY/+j/AgAaAAgAAGDc//r/AQAUADkAAAA=")
 tile_set = ExtResource("1_232go")
 
 [node name="CapaObjetos" type="TileMapLayer" parent="." unique_id=606609887]
+z_index = 1
+y_sort_enabled = true
 scale = Vector2(0.6, 0.6)
 tile_map_data = PackedByteArray("AADj/wAAAgAWADQAAADb/wAAAgAQADUAAADT/wAAAgAQADUAAADe/+j/AQAaADgAAADg/+b/AQAWACoAAADQ/wgAAgAYADkAAADU/wgAAgAcADkAAAD6/wgAAQAMAA8AAADk//n/AgAcACwAAADc//n/AgAXACwAAADU//n/AgAUACwAAAA=")
 tile_set = ExtResource("1_232go")
