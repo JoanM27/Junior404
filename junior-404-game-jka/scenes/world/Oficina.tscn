@@ -32,27 +32,17 @@ tile_set = ExtResource("3_ly4cv")
 z_index = -17
 position = Vector2(0, 8)
 scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AAAIAPn/AgAWABwAAAANAPn/AgAWABwAAADY//H/AQASAB0AAADe//H/AQASABkAAADq/9//AgAEADEAAADu/9//AgAOADEAAADa/9//AgAEADUAAADl/9//AgAWABwAAADh/9//AgAMAC0AAAACAPn/AgAIACkAAAD9//n/AgAAADEAAADs//D/AgACAC0AAADR//H/AgAMAC0AAADs/wMAAgAIABQAAADs//v/AgAIABQAAADm/+j/AgAMABoAAADq/+j/AgAMABoAAAA=")
+tile_map_data = PackedByteArray("AAAIAPn/AgAWABwAAAANAPn/AgAWABwAAADY//H/AQASAB0AAADe//H/AQASABkAAADq/9//AgAEADEAAADu/9//AgAOADEAAADa/9//AgAEADUAAADl/9//AgAWABwAAADh/9//AgAMAC0AAAACAPn/AgAIACkAAAD9//n/AgAAADEAAADs//D/AgACAC0AAADR//H/AgAMAC0AAADs/wMAAgAIABQAAADs//v/AgAIABQAAADm/+j/AgAMABoAAADq/+j/AgAMABoAAADw//T/AQAEACIAAAAFAPr/AQAJADAAAAD6//r/AQAMAA8AAADP//P/AQAMAA8AAADt/+H/AQAMABQAAADt/+z/AQAMABQAAAA=")
 tile_set = ExtResource("1_232go")
 
 [node name="CapaMuebles" type="TileMapLayer" parent="." unique_id=1580745013]
 scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AADw//X/AQAEACIAAADy//r/AgAaABEAAFDY/+T/AgAaAAgAAGDU//P/AgAQACEAAAD6//v/AQAMAA8AAADt/+L/AQAMABQAAADe/+j/AQAMAAkAAADc//r/AQAUADkAAADk//r/AQAUADkAAADU//r/AQAUADkAAADk/wAAAQAUADkAAADc/wAAAQAUADkAAADU/wAAAQAUADkAAAA=")
+tile_map_data = PackedByteArray("AADy//r/AgAaABEAAFDY/+T/AgAaAAgAAGDU//P/AgAQACEAAADe/+j/AQAMAAkAAADk//r/AQAUADkAAADU//r/AQAUADkAAADk/wAAAQAUADkAAADc/wAAAQAUADkAAADU/wAAAQAUADkAAADY/+j/AgAaAAgAAGDc//r/AQAUADkAAAA=")
 tile_set = ExtResource("1_232go")
 
 [node name="CapaObjetos" type="TileMapLayer" parent="." unique_id=606609887]
 scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AADc//n/AgAUACwAAADk//n/AgAXACwAAADU//n/AgAcACwAAADj/wAAAgAWADQAAADb/wAAAgAQADUAAADT/wAAAgAQADUAAADe/+j/AQAaADgAAADg/+b/AQAWACoAAADQ/wgAAgAYADkAAADU/wgAAgAcADkAAAA=")
-tile_set = ExtResource("1_232go")
-
-[node name="CapaObjetos2" type="TileMapLayer" parent="." unique_id=1057617556]
-scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AADc//n/AgAUACwAAADk//n/AgAXACwAAADU//n/AgAcACwAAADj/wAAAgAWADQAAADb/wAAAgAQADUAAADT/wAAAgAQADUAAADe/+j/AQAaADgAAADg/+b/AQAWACoAAADQ/wgAAgAYADkAAADU/wgAAgAcADkAAAA=")
-tile_set = ExtResource("1_232go")
-
-[node name="CapaObjetos3" type="TileMapLayer" parent="." unique_id=604832817]
-scale = Vector2(0.6, 0.6)
-tile_map_data = PackedByteArray("AADc//n/AgAUACwAAADk//n/AgAXACwAAADU//n/AgAcACwAAADj/wAAAgAWADQAAADb/wAAAgAQADUAAADT/wAAAgAQADUAAADe/+j/AQAaADgAAADg/+b/AQAWACoAAADQ/wgAAgAYADkAAADU/wgAAgAcADkAAAA=")
+tile_map_data = PackedByteArray("AADj/wAAAgAWADQAAADb/wAAAgAQADUAAADT/wAAAgAQADUAAADe/+j/AQAaADgAAADg/+b/AQAWACoAAADQ/wgAAgAYADkAAADU/wgAAgAcADkAAAD6/wgAAQAMAA8AAADk//n/AgAcACwAAADc//n/AgAXACwAAADU//n/AgAUACwAAAA=")
 tile_set = ExtResource("1_232go")
 
 [node name="CapaFondo" type="TileMapLayer" parent="." unique_id=1627140130]
